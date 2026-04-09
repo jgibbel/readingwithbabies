@@ -1,0 +1,242 @@
+.about-page {
+  padding-bottom: 0;
+}
+
+/* ── Header image ── */
+.about-header-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── Lavender band (sections 2 & 5) ── */
+.about-band {
+  background: #f0ecf9;
+  padding: 64px 0;
+}
+
+.about-intro {
+  text-align: center;
+}
+
+.about-headline {
+  color: var(--purple);
+  font-size: 2.8rem;
+  margin: 0 0 20px;
+  line-height: 1.2;
+}
+
+.about-subhead {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.8;
+}
+
+/* ── White card sections (3 & 4) ── */
+.about-card-section {
+  padding: 48px 0;
+  max-width: 90vw;
+  width: 90vw;
+}
+
+.about-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 48px 52px;
+  box-shadow: 0 4px 32px rgba(71, 51, 140, 0.08);
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.valign-center {
+  align-self: center;
+}
+
+.col-img.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.susan-photo {
+  width: 316px;
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.susan-email {
+  margin-top: 12px;
+  font-size: 0.9rem;
+}
+
+.rtm-text-photos {
+  width: 100%;
+}
+
+.rtm-text {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.rtm-text .card-subheading {
+  margin-bottom: 28px;
+}
+
+.rtm-text p {
+  margin-bottom: 20px;
+}
+
+.rtm-text .btn-group {
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.rtm-photo-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.rtm-row-img {
+  flex: 0 0 auto;
+  height: 220px;
+  width: auto;
+  border-radius: 8px;
+}
+
+/* Mid breakpoint: first image on its own row, next two share bottom row */
+@media (max-width: 900px) and (min-width: 750px) {
+  .rtm-row-img:first-child {
+    flex: 0 0 auto;
+    max-width: 100%;
+  }
+}
+
+/* Mobile: stack full width */
+@media (max-width: 749px) {
+  .rtm-row-img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+/* Card headings */
+.card-heading {
+  font-size: 2rem;
+  margin: 0 0 6px;
+  color: var(--purple);
+  line-height: 1.2;
+}
+
+.card-subheading {
+  font-size: 1rem;
+  font-style: italic;
+  color: #666;
+  margin: 0 0 20px;
+}
+
+.col-text p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #333;
+  margin: 0 0 14px;
+}
+
+.col-text p:last-of-type {
+  margin-bottom: 20px;
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* ── Books band ── */
+.about-books-band {
+  text-align: center;
+}
+
+.about-books-band .about-headline {
+  margin-bottom: 40px;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.book-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 28px 20px 24px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(71, 51, 140, 0.15);
+}
+
+.book-cover {
+  height: 180px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+.book-item p {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin: 0;
+  color: #444;
+  width: 100%;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .about-card {
+    padding: 32px 28px;
+  }
+  .two-col {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .books-grid {
+    grid-template-columns: 1fr;
+  }
+  .book-cover {
+    height: 324px;
+  }
+  .about-headline {
+    font-size: 2.2rem;
+  }
+  .card-heading {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-card {
+    padding: 24px 18px;
+  }
+  .about-headline {
+    font-size: 1.8rem;
+  }
+}

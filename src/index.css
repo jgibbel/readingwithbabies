@@ -1,0 +1,79 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --purple: #47338c;
+  --purple-dark: #3a2a75;
+  --white: #ffffff;
+  --text: #333333;
+  --text-light: #555555;
+  --font-body: 'Catamaran', sans-serif;
+  --font-heading: 'Baloo 2', sans-serif;
+  --max-width: 960px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--purple);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--purple);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--purple);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: var(--purple-dark);
+  text-decoration: none;
+  color: var(--white);
+}
+
+main {
+  flex: 1;
+}

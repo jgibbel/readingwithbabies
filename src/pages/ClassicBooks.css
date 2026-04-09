@@ -1,0 +1,28 @@
+.classic-content {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.book-list {
+  padding-left: 24px;
+  margin: 0;
+}
+
+.book-list-item {
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.book-list-title {
+  font-weight: 600;
+}
+
+.book-list-author {
+  color: #555;
+}
+
+.book-list-desc {
+  color: #444;
+}

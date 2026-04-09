@@ -1,0 +1,50 @@
+.rwb-content {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.rwb-content > p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #333;
+}
+
+.section-heading {
+  text-align: center;
+  font-size: 1.75rem;
+  color: var(--purple);
+  margin: 48px 0 24px;
+}
+
+.btn-center {
+  display: flex;
+  justify-content: center;
+}
+
+.spacer {
+  height: 44px;
+}
+
+.library-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 24px 0;
+}
+
+.library-img {
+  width: 410px;
+  max-width: 100%;
+  height: auto;
+}
+
+.mt-sm {
+  margin-top: 16px;
+}
+
+.chart-img {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  display: block;
+}
