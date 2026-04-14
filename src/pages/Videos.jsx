@@ -13,7 +13,7 @@ const videos = [
   },
   {
     section: 'Read to Me Program Video',
-    description: 'This video documents an iteration of the Read to Me program implemented with teen parents.',
+    description: 'This video shows one entire Read To Me Program with teen moms in Brooklyn, New York.',
     embeds: [
       'https://www.youtube.com/embed/Ea-Y22IUokw',
     ],

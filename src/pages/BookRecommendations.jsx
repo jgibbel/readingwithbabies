@@ -23,6 +23,7 @@ const books = [
     title: 'Mama Hug',
     author: 'by Emma Straub',
     illustrator: 'Illustrations by Stevie Lewis',
+    note: 'Now available in Board Book format',
   },
   {
     image: '91uDVfhAwlL._AC_UF10001000_QL80_-1.jpg',
@@ -59,7 +60,7 @@ export default function BookRecommendations() {
       <Hero image={img('READING-W-BABIES-CONTACT-US-IMG3.jpg')} title="Book Recommendations" />
 
       <div className="container recs-content">
-        {books.map(({ image, alt, title, subtitle, author, illustrator, description, link, linkLabel }) => (
+        {books.map(({ image, alt, title, subtitle, author, illustrator, description, link, linkLabel, note }) => (
           <div key={image} className="rec-card">
             <div className="rec-img-wrap">
               <img src={img(image)} alt={alt} className="rec-cover" />
@@ -69,6 +70,7 @@ export default function BookRecommendations() {
               {subtitle && <p className="rec-subtitle">{subtitle}</p>}
               {author && <p className="rec-author">{author}</p>}
               {illustrator && <p className="rec-illustrator">{illustrator}</p>}
+              {note && <span className="rec-note">{note}</span>}
               {description && <p className="rec-description">{description}</p>}
               {link && (
                 <a href={link} className="btn rec-link-btn" target="_blank" rel="noreferrer">

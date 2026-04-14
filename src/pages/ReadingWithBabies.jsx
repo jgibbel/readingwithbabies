@@ -33,41 +33,58 @@ export default function ReadingWithBabies() {
 
         <h1 className="section-heading">Where to Get Books?</h1>
         <p>
-          A library card is the best way to get reliable and free access to books to read with your baby.
-          New York City's three public library systems each have programming for children under 5. You can
-          learn more about their offerings and find a location near you on their websites.
+          Below are NYC public libraries with links to programs for very young children. Additionally, I’ve listed a few other public libraries in a city closer to you. They also adore getting babies and toddlers to have books in their lives early and often. They are absolutely fabulous. We adore libraries and librarians. 
         </p>
 
-        <div className="library-block">
-          <a href="https://www.queenslibrary.org/programs-activities/kids/early-learning-services-queens-public-library-0-5" target="_blank" rel="noreferrer">
-            <img src={img('CLDC_Early_Childhood_Area.jpg')} alt="Queens Public Library Early Childhood Area" className="library-img" />
-          </a>
-          <div className="btn-center mt-sm">
-            <a href="https://www.queenslibrary.org/programs-activities/kids/early-learning-services-queens-public-library-0-5" className="btn" target="_blank" rel="noreferrer">
-              Queens Public Library, Early Learning Services
+        <div className="library-row">
+          <div className="library-block">
+            <a href="https://www.queenslibrary.org/programs-activities/kids/early-learning-services-queens-public-library-0-5" target="_blank" rel="noreferrer">
+              <img src={img('CLDC_Early_Childhood_Area.jpg')} alt="Queens Public Library Early Childhood Area" className="library-img" />
             </a>
+            <div className="btn-center mt-sm">
+              <a href="https://www.queenslibrary.org/programs-activities/kids/early-learning-services-queens-public-library-0-5" className="btn btn-pill" target="_blank" rel="noreferrer">
+                Queens Public Library
+                <span className="btn-subtitle">Early Learning Services</span>
+              </a>
+            </div>
+          </div>
+
+          <div className="library-block">
+            <a href="https://www.bklynlibrary.org/learn/kids#little-kids" target="_blank" rel="noreferrer">
+              <img src={img('48292030712_cc79bdfcf6_b-2129821080.jpg')} alt="Brooklyn Public Library" className="library-img" />
+            </a>
+            <div className="btn-center mt-sm">
+              <a href="https://www.bklynlibrary.org/learn/kids#little-kids" className="btn btn-pill" target="_blank" rel="noreferrer">
+                Brooklyn Public Library
+                <span className="btn-subtitle">Little Kids</span>
+              </a>
+            </div>
+          </div>
+
+          <div className="library-block">
+            <a href="https://www.nypl.org/education/early-literacy" target="_blank" rel="noreferrer">
+              <img src={img('Lion_600x300B-1.jpg')} alt="New York Public Library" className="library-img" />
+            </a>
+            <div className="btn-center mt-sm">
+              <a href="https://www.nypl.org/education/early-literacy" className="btn btn-pill" target="_blank" rel="noreferrer">
+                New York Public Library
+                <span className="btn-subtitle">Early Literacy</span>
+              </a>
+            </div>
           </div>
         </div>
 
-        <div className="library-block">
-          <a href="https://www.bklynlibrary.org/learn/kids#little-kids" target="_blank" rel="noreferrer">
-            <img src={img('48292030712_cc79bdfcf6_b-2129821080.jpg')} alt="Brooklyn Public Library" className="library-img" />
-          </a>
-          <div className="btn-center mt-sm">
-            <a href="https://www.bklynlibrary.org/learn/kids#little-kids" className="btn" target="_blank" rel="noreferrer">
-              Brooklyn Public Library, Little Kids
-            </a>
-          </div>
-        </div>
-
-        <div className="library-block">
-          <a href="https://www.nypl.org/education/early-literacy" target="_blank" rel="noreferrer">
-            <img src={img('Lion_600x300B-1.jpg')} alt="New York Public Library" className="library-img" />
-          </a>
-          <div className="btn-center mt-sm">
-            <a href="https://www.nypl.org/education/early-literacy" className="btn" target="_blank" rel="noreferrer">
-              New York Public Library, Early Literacy
-            </a>
+        <div className="city-pills-section">
+          <p className="city-pills-label">More great libraries near you:</p>
+          <div className="city-pills">
+            <a href="https://www.mpl.org/blog/now/celebrate-week-of-the-young-child-with-board-books" className="city-pill" target="_blank" rel="noreferrer">Milwaukee</a>
+            <a href="https://www.lapl.org/kids" className="city-pill" target="_blank" rel="noreferrer">Los Angeles</a>
+            <a href="https://chipublib.bibliocommons.com/v2/events?audiences=53f250153860d1000000000d" className="city-pill" target="_blank" rel="noreferrer">Chicago</a>
+            <a href="https://sppl.org/birth-to-k/" className="city-pill" target="_blank" rel="noreferrer">Minneapolis–St Paul</a>
+            <a href="https://www.lfpl.org/kids" className="city-pill" target="_blank" rel="noreferrer">Louisville</a>
+            <a href="https://www.spl.org/programs-and-services/fun-and-games/story-time" className="city-pill" target="_blank" rel="noreferrer">Seattle</a>
+            <a href="https://bpl.bibliocommons.com/v2/events" className="city-pill" target="_blank" rel="noreferrer">Boston</a>
+            <a href="https://www.dallaslibrary.org/services/children-and-teens" className="city-pill" target="_blank" rel="noreferrer">Dallas</a>
           </div>
         </div>
 

@@ -87,10 +87,15 @@
 
 .rtm-text .card-subheading {
   margin-bottom: 28px;
+  text-align: center;
 }
 
 .rtm-text p {
   margin-bottom: 20px;
+  text-align: left;
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .rtm-text .btn-group {

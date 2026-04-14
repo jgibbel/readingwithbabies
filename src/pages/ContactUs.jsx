@@ -4,7 +4,7 @@ import { img } from '../utils/img'
 import './ContactUs.css'
 
 // Get your free access key at https://web3forms.com
-const WEB3FORMS_KEY = 'YOUR_WEB3FORMS_ACCESS_KEY'
+const WEB3FORMS_KEY = '3c2eb490-3222-4391-9989-e86878461557'
 
 export default function ContactUs() {
   const [status, setStatus] = useState('idle') // idle | submitting | success | error
